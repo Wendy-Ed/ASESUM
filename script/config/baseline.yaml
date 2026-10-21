@@ -1,0 +1,5 @@
+model_name: gpt-4o-mini
+model_path: ./qwen-7B
+prompt_path: baseline_summarize.txt
+prompt_type: review
+extract_column: text

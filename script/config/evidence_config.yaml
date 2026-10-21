@@ -1,0 +1,4 @@
+model_name: gpt-4o-mini
+prompt_path: evidence_extract.yaml
+prompt_type: review
+extract_column: premise

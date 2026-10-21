@@ -1,0 +1,15 @@
+Fill the scheme with the provided review. 
+
+Claim: User has "sentiment" towards "aspect" of the product.
+Major Premise: User observes "evidence" about "aspect"
+Minor Premise: "evidence" is a sign that "aspect" is "sentiment"
+
+Note:
+1. Identify the aspects mentioned in the review. Then provide a new scheme with the relevant evidence for each identified aspect. 
+2. The most mentioned aspects are {aspect}. 
+3. Only generate a new aspect when there is no matching one above.
+4. Do NOT provide scheme having aspect wasn't mentioned in the text.
+5. Do NOT include too much details in the evidence.
+
+Please return the values in JSON format: 
+[{"aspect": "the property / feature of the product", "sentiment": "postive/negative", "evidence": "supports from the argument"}, ...]
