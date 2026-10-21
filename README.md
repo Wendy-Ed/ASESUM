@@ -11,12 +11,18 @@ cd asesum
 ```
 
 ### Prepare environment
-The following enviornment requires Linux system 
+Use Python 3.11 or 3.12 for the runtime dependencies (Git is also required).
+The original Linux research environment is preserved in `requirements-legacy.txt`.
 ```bash
-conda create -n asenv python=3.10
+conda create -n asenv python=3.11
 conda activate asenv
 pip install -r requirements.txt
 ```
+
+Package installation does not supply model weights or missing project files.
+The argumentation script still needs `all-mpnet-base-v2` in the working directory,
+`prompt/hierarchy_prompt_tree.txt`, and repairs to its missing utilities and
+mismatched function calls. GPT calls also require `OPENAI_API_KEY`.
 
 ### Configuration file
 Before start running the code, create a config file under the `script/config` folder for task configuration.

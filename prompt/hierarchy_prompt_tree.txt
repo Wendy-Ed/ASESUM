@@ -1,0 +1,11 @@
+Based on the existing schema tree, choose a node in the tree that input aspect is "part of" the node.
+
+Relation definition:
+If A is part of B, then:
+- A is a subcomponent of B in hotel domain
+- A is a feature of B in hotel domain
+
+Existing tree:
+{schema_tree}
+
+Return the results in the JSON format {{"node": "name of the node", "reson": "select from the two conditions above."}}

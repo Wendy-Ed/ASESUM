@@ -14,7 +14,7 @@ from utils.evaluation_utils import (
     pagerank_most_entail_sentence,
 )
 from loguru import logger
-from summac.summac.model_summac import SummaCZS, SummaCConv
+from summac.model_summac import SummaCZS, SummaCConv
 from sklearn.cluster import DBSCAN
 
 
